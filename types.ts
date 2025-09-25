@@ -48,5 +48,5 @@ export interface ResumeData {
   experience: Experience[];
   education: Education[];
   projects: Project[];
-  certifications: Experience[]; // Using Experience type for simplicity
+  certifications: Experience[];
 }

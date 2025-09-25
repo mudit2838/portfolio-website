@@ -9,8 +9,8 @@ export const resumeData: ResumeData = {
     phone: "(+91) 9458073803",
     tagline: "Aspiring software engineer with a passion for building scalable web applications and solving complex problems.",
     socials: {
-      github: "https://github.com/muditkumar",
-      linkedin: "https://linkedin.com/in/muditkumar",
+      github: "https://github.com/mudit2838",
+      linkedin: "https://www.linkedin.com/in/mudit-kumar-003a61186/",
     },
   },
   skills: [

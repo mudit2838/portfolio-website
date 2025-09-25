@@ -36,9 +36,9 @@ const Hero: React.FC = () => {
               Contact Me
             </a>
             <a
-              href="/resume.pdf"
+              href="./data/resume.pdf"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer"  
               className="btn bg-light-bg-alt dark:bg-dark-bg-alt text-light-primary dark:text-dark-primary border border-light-primary dark:border-dark-primary font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 shadow-lg"
             >
               Download CV
