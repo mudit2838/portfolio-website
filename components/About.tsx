@@ -5,7 +5,7 @@ import { resumeData } from '@/data/resumeData';
 
 const stats = [
   { label: 'Projects Built', value: '6+' },
-  { label: 'Certifications', value: '3' },
+  { label: 'Certifications', value: '7+' },
   { label: 'Internships', value: '3' },
   { label: 'CGPA', value: '8.0' },
 ];
@@ -20,15 +20,18 @@ export default function About() {
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Left — avatar + stats */}
         <div className="gsap-reveal flex flex-col items-center lg:items-start gap-8">
-          {/* Avatar placeholder with glowing ring */}
-          <div className="relative">
-            <div className="w-48 h-48 md:w-56 md:h-56 rounded-3xl bg-gradient-to-br from-violet-muted to-bg-card border border-border-light flex items-center justify-center shadow-violet-lg">
-              <span className="font-syne font-extrabold text-7xl gradient-text">MK</span>
+          <div className="relative group">
+            <div className="w-48 h-48 md:w-56 md:h-56 rounded-3xl overflow-hidden border border-border-light shadow-violet-lg relative z-10">
+              <img
+                src="/myImage.png"
+                alt={name}
+                className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+              />
             </div>
             {/* Glow ring */}
-            <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-violet-primary/30 to-transparent -z-10 blur-md" />
+            <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-violet-primary/30 to-transparent -z-10 blur-md transition-all duration-500 group-hover:from-violet-primary/60 group-hover:blur-lg" />
             {/* Floating badge */}
-            <div className="absolute -bottom-4 -right-4 bg-bg-card border border-border-light rounded-2xl px-4 py-2 shadow-violet-md">
+            <div className="absolute -bottom-4 -right-4 bg-bg-card border border-border-light rounded-2xl px-4 py-2 shadow-violet-md z-20">
               <span className="text-xs font-dm text-text-secondary">💻 Building cool stuff</span>
             </div>
           </div>

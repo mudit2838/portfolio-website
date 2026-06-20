@@ -72,6 +72,15 @@ function TimelineItem({
             </li>
           ))}
         </ul>
+        {'tech' in item && item.tech && item.tech.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-border/40">
+            {item.tech.map((t) => (
+              <span key={t} className="tag text-xs">
+                {t}
+              </span>
+            ))}
+          </div>
+        )}
         {item.certificate && (
           <p className="text-xs font-dm text-text-muted border-t border-border pt-2 mt-2">
             Certificate: <span className="text-violet-glow/70">{item.certificate}</span>

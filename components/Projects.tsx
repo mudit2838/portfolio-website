@@ -22,10 +22,17 @@ function ProjectCard({ project, featured }: { project: (typeof resumeData.projec
         </div>
         <div className="flex items-center gap-2">
           {featured && (
-            <span className="text-xs font-dm font-semibold text-yellow-400/80 bg-yellow-400/10 border border-yellow-400/20 px-2 py-0.5 rounded-full">
+            <span className="text-xs font-dm font-semibold text-yellow-400/80 bg-yellow-400/10 border border-yellow-400/20 px-2.5 py-0.5 rounded-full">
               ⭐ Featured
             </span>
           )}
+          {'badge' in project && project.badge && (
+            <span className="text-xs font-dm font-semibold text-violet-glow bg-violet-muted/40 border border-violet-primary/30 px-2.5 py-0.5 rounded-full">
+              {project.badge}
+            </span>
+          )}
+        </div>
+        <div className="flex items-center gap-2">
           {project.live && (
             <a
               href={project.live}

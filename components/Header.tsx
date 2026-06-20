@@ -83,7 +83,7 @@ export default function Header() {
               </button>
             ))}
             <a
-              href="mailto:Muditchauhan28@gmail.com"
+              href={`mailto:${resumeData.personalInfo.email}`}
               className="ml-4 btn-primary py-2 px-5 text-sm"
             >
               Hire Me
